@@ -26,3 +26,9 @@ class Game():
 
     def finished(self):
         return self.position==self.length-1;
+
+    def display(self):
+        print("[", end='')
+        for i in range(self.length):
+            print("x" if self.position==i else "_", end='')
+        print("]", end='\r')
